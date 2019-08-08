@@ -1,0 +1,35 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20190808103715
+Username: VV\administrator
+RunAs User: VV\administrator
+Configuration Name: 
+Machine: DC1-SERVER (Microsoft Windows NT 10.0.17763.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 5732
+PSVersion: 5.1.17763.316
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.17763.316
+BuildVersion: 10.0.17763.316
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is student-errors.txt
+ERROR!!
+New-Item : The path is not of a legal form.
+At C:\cognos\STUDENT-SCRIPTS\student-script.ps1:81 char:1
++ New-Item -ItemType directory -Path $HomeDirectoryPutTogether
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (\\student\TEST888USR888:String) [New-Item], ArgumentException
+    + FullyQualifiedErrorId : CreateDirectoryArgumentError,Microsoft.PowerShell.Commands.NewItemCommand
+New-Item : The path is not of a legal form.
+At C:\cognos\STUDENT-SCRIPTS\student-script.ps1:81 char:1
++ New-Item -ItemType directory -Path $HomeDirectoryPutTogether
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (\\student\TEST888USR888:String) [New-Item], ArgumentException
+    + FullyQualifiedErrorId : CreateDirectoryArgumentError,Microsoft.PowerShell.Commands.NewItemCommand
+
+PS C:\cognos\STUDENT-SCRIPTS> TerminatingError(New-ADUser): "Cannot validate argument on parameter 'Path'. The argument is null or empty. Provide an argument that is not null or empty, and then try the command again."
+ERROR!: See Log File, student-errors.txt
